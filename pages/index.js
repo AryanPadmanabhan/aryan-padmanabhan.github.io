@@ -25,8 +25,6 @@ export default function Home() {
       <Education/>
       <Experience/>
       <Projects />
-      {/* <Testing /> */}
-      {/* <Skills/> */}
     </div>
   )
 }
