@@ -4,7 +4,7 @@ import stocks from '../public/assets/stocks.png';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 
-const crypto = () => {
+const sig = () => {
   return (
     <div className='w-full dark:bg-gray-800'>
       <div className='w-screen h-[50vh] relative'>
@@ -17,44 +17,15 @@ const crypto = () => {
           alt='/'
         />
         <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
-          <h2 className='py-2'>Project Signol</h2>
+          <h2 className='py-2'>
+Project Signol</h2>
           <h3>Python / JavaScript</h3>
         </div>
-        <div className='absolute top-[70%] max-w-[1240px] w-full left-[90%] right-[50%] translate-x-[-10%] translate-y-[-70%] text-white z-10 mx-auto p-2 grid md:grid-cols-5 gap-8 py-8'>
-        <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4 text-white bg-black/50'>
-          <div className='p-2'>
-            <p className='text-center font-bold pb-2 '>Technologies</p>
-            <div className='grid grid-cols-3 md:grid-cols-1 '>
-              <p className='py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> Python
-              </p>
-              <p className='py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> JavaScript
-              </p>
-              <p className='py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> SQL
-              </p>
-              <p className='py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> Google App Scripts
-              </p>
-              <p className='py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> Heroku
-              </p>
-              <p className='py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> APIs
-              </p>
-            </div>
-          </div>
-        </div>
-        </div>
-
-
       </div>
 
-      <div className='max-w-[1240px] mx-auto p-2 gap-8 py-8 '>
-        <div className='col-span-4 text-white'>
-          {/* <p>Project</p> */}
-          <h1>Overview</h1>
+      <div className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 py-8 text-white'>
+        <div className='col-span-4'>
+        <h1>Overview</h1>
           <p className='pb-8'>
             Project Signol has been a project aimed to automate the trading experience. It started three years ago in which I split the project into 3 distinct phases 
           </p>
@@ -83,21 +54,32 @@ const crypto = () => {
           <p className='pb-8'>
             In progress
           </p>
-          {/* <a
-            href='https://github.com/fireclint/crypto-react-firebase'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <button className='px-8 py-2 mt-4 mr-8'>Code</button>
-          </a>
-          <a
-            href='https://cryptobase-yt.web.app/'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <button className='px-8 py-2 mt-4'>Demo</button>
-          </a> */}
 
+        </div>
+        <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4 text-white'>
+          <div className='p-2'>
+            <p className='text-center font-bold pb-2'>Technologies</p>
+            <div className='grid grid-cols-3 md:grid-cols-1'>
+              <p className='text-white py-2 flex items-center'>
+                <RiRadioButtonFill className='pr-1' /> Python
+              </p>
+              <p className='text-white py-2 flex items-center'>
+                <RiRadioButtonFill className='pr-1' /> Javascript
+              </p>
+              <p className='text-white py-2 flex items-center'>
+                <RiRadioButtonFill className='pr-1' /> SQL
+              </p>
+              <p className='text-white py-2 flex items-center'>
+                <RiRadioButtonFill className='pr-1' /> Google App Scripts
+              </p>
+              <p className='text-white py-2 flex items-center'>
+                <RiRadioButtonFill className='pr-1' /> Heroku
+              </p>
+              <p className='text-white py-2 flex items-center'>
+                <RiRadioButtonFill className='pr-1' /> APIs
+              </p>
+            </div>
+          </div>
         </div>
         <Link href='/#projects'>
           <p className='underline cursor-pointer'>Back</p>
@@ -107,4 +89,4 @@ const crypto = () => {
   );
 };
 
-export default crypto;
+export default sig;
