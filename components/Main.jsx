@@ -12,7 +12,7 @@ import { Cursor, useTypewriter} from "react-simple-typewriter"
 
 export const Main = () => {
     const [text] = useTypewriter({
-        words: ['AI/ML', 'Computer Vision', 'Deep Learning', 'NLP'],
+        words: ['AI/ML', 'Financial Algos', 'Deep Learning', 'NLP'],
         loop: true,
         delaySpeed: 2000,
     });
@@ -24,7 +24,7 @@ export const Main = () => {
             <div>
                 
                 {/* <p className='uppercase text-sm tracking-widest text-black'>LET'S BUILD SOMETHING TOGETHER</p> */}
-                <h1 className='py-4 text-white'>
+                <h1 className='pt-6 pb-2 text-white'>
                     Hi, I'm <span className='text-white'>Aryan</span>
                 </h1>
                 <h1 className='py-2 text-white'>
