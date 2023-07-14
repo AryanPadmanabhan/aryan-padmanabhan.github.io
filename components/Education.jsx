@@ -5,14 +5,14 @@ import Image from 'next/image'
 
 export const Education = () => {
   return (
-    <div id='education' className='w-full dark:bg-gray-900'>
+    <div id='education' className='w-full bg-gray-900'>
     <div className='max-w-[1240px] mx-auto px-2'>
             <h1 className='flex 
 max-w-full px-10 justify-evenly mx-auto uppercase tracking-[15px] text-white text-4xl py-10'>Education</h1>
 
             <div className='grid md:grid-cols-2 gap-8'>
 
-              <div class=" dark:bg-gray-800 my-5 max-w-lg rounded overflow-hidden shadow-lg hover:scale-105 ease-in duration-300 mx-auto">
+              <div class=" bg-gray-800 my-5 max-w-lg rounded overflow-hidden shadow-lg hover:scale-105 ease-in duration-300 mx-auto">
               <Image className='rounded-xl' src={umn}/>
                 <div class="px-6 py-4">
                   <div class="font-bold text-xl mb-2 tracking-widest flex justify-center items-center text-white">University of Minnesota</div>
@@ -26,7 +26,7 @@ max-w-full px-10 justify-evenly mx-auto uppercase tracking-[15px] text-white tex
                  </div>
               </div>
               
-              <div class=" dark:bg-gray-800 my-5 max-w-lg rounded overflow-hidden shadow-lg hover:scale-105 ease-in duration-300 mx-auto ">
+              <div class=" bg-gray-800 my-5 max-w-lg rounded overflow-hidden shadow-lg hover:scale-105 ease-in duration-300 mx-auto ">
               <Image className='rounded-xl' width='650' height='306' src={shako2}/>
                 <div class="px-6 py-4">
                   <div class="font-bold text-xl mb-2 tracking-widest flex justify-center items-center text-white">Shakopee High School</div>

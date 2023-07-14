@@ -7,7 +7,7 @@ import unh from '../public/assets/unh.png'
 
 const uhg = () => {
   return (
-    <div className='w-full dark:bg-gray-800'>
+    <div className='w-full bg-gray-800'>
       <div className='w-screen h-[50vh] relative'>
         <div className='absolute top-0 left-0 w-full h-[50vh] bg-black/70 z-10' />
         <Image

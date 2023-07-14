@@ -17,7 +17,7 @@ export const Main = () => {
         delaySpeed: 2000,
     });
   return (
-    <div id='home' className='w-full h-screen text-center dark:bg-gray-900'>
+    <div id='home' className='w-full h-screen text-center bg-gray-900'>
         
         <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
             
@@ -65,8 +65,8 @@ export const Main = () => {
                     </Link>
                     
                 </div> */}
-                <div className=" p-10 shadow-md rounded-xl sm:px-12 dark:bg-gray-900 dark:text-gray-100 flex flex-col w-full h-full mx-auto hover:scale-110 ease-in duration-300">
-	<img src="https://media.licdn.com/dms/image/C4E03AQFZZda12YZB8A/profile-displayphoto-shrink_800_800/0/1643820177216?e=2147483647&v=beta&t=cffzIIOU68Es825VPIGYzzVr37ekU9MiXK6WWIzQvJw" alt="" className="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square" />
+                <div className=" p-10 shadow-md rounded-xl sm:px-12 bg-gray-900 text-gray-100 flex flex-col w-full h-full mx-auto hover:scale-110 ease-in duration-300">
+	<img src="https://media.licdn.com/dms/image/C4E03AQFZZda12YZB8A/profile-displayphoto-shrink_800_800/0/1643820177216?e=2147483647&v=beta&t=cffzIIOU68Es825VPIGYzzVr37ekU9MiXK6WWIzQvJw" alt="" className="w-32 h-32 mx-auto rounded-full bg-gray-500 aspect-square" />
 	<div className="space-y-4 text-center divide-y divide-gray-700">
 		<div className="">
 			<h2 className="my-2 space-y-1 text-xl font-semibold sm:text-xl">Aryan Padmanabhan</h2>

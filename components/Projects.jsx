@@ -31,14 +31,14 @@ import Link from 'next/link'
 export const Projects = () => {
   return (
 
-    <div id='projects'className='w-full dark:bg-gray-900'>
+    <div id='projects'className='w-full bg-gray-900'>
       
         <div className='max-w-[1240px] mx-auto px-2'>
             <h1 className='flex max-w-full px-10 justify-evenly mx-auto uppercase tracking-[15px] text-white text-4xl py-10'>Projects</h1>
 
             <div className='grid md:grid-cols-3 gap-8'>
 
-              <div class="dark:bg-gray-800 my-5 max-w-lg rounded overflow-hidden shadow-lg hover:scale-105 ease-in duration-300 mx-auto">
+              <div class="bg-gray-800 my-5 max-w-lg rounded overflow-hidden shadow-lg hover:scale-105 ease-in duration-300 mx-auto">
                 {/* <img class='rounded-t-lg' src='https://www.minnpost.com/wp-content/uploads/2022/01/NorthropUofM640.png' alt=''/> */}
                 <Link href= '/signol'>
                 <Image className='rounded-xl opacity-50' width='650' height='306'src={stocks}/>
@@ -61,7 +61,7 @@ export const Projects = () => {
                  </div>
               </div>
               
-              <div class="dark:bg-gray-800 my-5 max-w-lg rounded overflow-hidden shadow-lg hover:scale-105 ease-in duration-300 mx-auto">
+              <div class="bg-gray-800 my-5 max-w-lg rounded overflow-hidden shadow-lg hover:scale-105 ease-in duration-300 mx-auto">
               <Link href= '/llm'>
               <Image className='rounded-xl group-hover:opacity-10' src={ml}/>
               </Link>
@@ -83,7 +83,7 @@ export const Projects = () => {
               
                  
               </div>
-              <div class="dark:bg-gray-800 my-5 max-w-lg rounded overflow-hidden shadow-lg hover:scale-105 ease-in duration-300 mx-auto">
+              <div class="bg-gray-800 my-5 max-w-lg rounded overflow-hidden shadow-lg hover:scale-105 ease-in duration-300 mx-auto">
                 {/* <img class='w-full' src='https://spaces4learning.com/-/media/EDU/S4L/Showcase/2019/pK12/Shakopee01x640.jpg' alt=''/> */}
                 <Link href= '/portOpt'>
                 <Image className='rounded-xl group-hover:opacity-10' width='610' height='380'src={portOpt}/>
@@ -105,7 +105,7 @@ export const Projects = () => {
                  
               </div>
 
-              <div class="dark:bg-gray-800 my-5 max-w-lg rounded overflow-hidden shadow-lg hover:scale-105 ease-in duration-300 mx-auto">
+              <div class="bg-gray-800 my-5 max-w-lg rounded overflow-hidden shadow-lg hover:scale-105 ease-in duration-300 mx-auto">
                 {/* <img class='w-full' src='https://spaces4learning.com/-/media/EDU/S4L/Showcase/2019/pK12/Shakopee01x640.jpg' alt=''/> */}
                 <Link href= '/#home'>
                 <Image className='rounded-xl group-hover:opacity-10' width='700' height='306' src={code}/>
@@ -127,7 +127,7 @@ export const Projects = () => {
                  </div>
                  
               </div>
-              <div class="dark:bg-gray-800 my-5 max-w-lg rounded overflow-hidden shadow-lg hover:scale-105 ease-in duration-300 mx-auto">
+              <div class="bg-gray-800 my-5 max-w-lg rounded overflow-hidden shadow-lg hover:scale-105 ease-in duration-300 mx-auto">
                 {/* <img class='w-full' src='https://spaces4learning.com/-/media/EDU/S4L/Showcase/2019/pK12/Shakopee01x640.jpg' alt=''/> */}
                 <Link href= '/sys'>
                 <Image className='rounded-xl group-hover:opacity-10' width='610' height='380'src={sys}/>
@@ -150,7 +150,7 @@ export const Projects = () => {
                  
               </div>
 
-              <div class="dark:bg-gray-800 my-5 max-w-lg rounded overflow-hidden shadow-lg hover:scale-105 ease-in duration-300 mx-auto">
+              <div class="bg-gray-800 my-5 max-w-lg rounded overflow-hidden shadow-lg hover:scale-105 ease-in duration-300 mx-auto">
                 {/* <img class='w-full' src='https://spaces4learning.com/-/media/EDU/S4L/Showcase/2019/pK12/Shakopee01x640.jpg' alt=''/> */}
                 <Link href= '/bestbuy'>
                 <Image className='rounded-xl group-hover:opacity-10' width='610' height='380'src={bb}/>
