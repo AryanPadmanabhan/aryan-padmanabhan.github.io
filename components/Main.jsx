@@ -66,7 +66,7 @@ export const Main = () => {
                     
                 </div> */}
                 <div className=" p-10 shadow-md rounded-xl sm:px-12 bg-gray-900 text-gray-100 flex flex-col w-full h-full mx-auto hover:scale-110 ease-in duration-300">
-	<img src="https://media.licdn.com/dms/image/C4E03AQFZZda12YZB8A/profile-displayphoto-shrink_800_800/0/1643820177216?e=2147483647&v=beta&t=cffzIIOU68Es825VPIGYzzVr37ekU9MiXK6WWIzQvJw" alt="" className="w-32 h-32 mx-auto rounded-full bg-gray-500 aspect-square" />
+	<img src="https://media.licdn.com/dms/image/D5603AQEspyE9i3OeoA/profile-displayphoto-shrink_400_400/0/1690591654063?e=1696464000&v=beta&t=HmRj58rjnLXlVIGT7IzxPxt5VWENxaS15sP4tp_oL4Y" alt="" className="w-32 h-32 mx-auto rounded-full bg-gray-500 aspect-square" />
 	<div className="space-y-4 text-center divide-y divide-gray-700">
 		<div className="">
 			<h2 className="my-2 space-y-1 text-xl font-semibold sm:text-xl">Aryan Padmanabhan</h2>
