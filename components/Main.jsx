@@ -5,10 +5,7 @@ import {AiOutlineMenu, AiOutlineClose, AiOutlineMail} from 'react-icons/ai'
 import Link from 'next/link';
 import Image from 'next/image'
 import { Cursor, useTypewriter} from "react-simple-typewriter"
-// import resume from '../public/assets/resume.pdf'
-// bg-gray-200 dark:bg-gray-900 (previous)
-// text-white-700 (a back-end developer)
-// text-[#5187e5] (Aryan)
+
 
 export const Main = () => {
     const [text] = useTypewriter({
@@ -23,7 +20,7 @@ export const Main = () => {
             
             <div>
                 
-                {/* <p className='uppercase text-sm tracking-widest text-black'>LET'S BUILD SOMETHING TOGETHER</p> */}
+
                 <h1 className='pt-6 pb-2 text-white'>
                     Hi, I'm <span className='text-white'>Aryan</span>
                 </h1>
@@ -31,42 +28,11 @@ export const Main = () => {
                     My Focus: <span className='text-[#8CA4CD]'> {text}</span>
                 </h1>
                 <p className='py-4 text-black max-w-[70%] m-auto'>
-                    {/* I'm a back-end developer specializing in AI/ML  */}
+
                 </p>
-                {/* <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
-                    
-                <a
-              href='https://www.linkedin.com/in/aryan-padmanabhan/'
-              target='_blank'
-              rel='noreferrer'
-            >
-                    <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300' href="www.linkedin.com">
-                        <FaLinkedinIn />
-                    </div>
-                    </a>
-                    <a
-              href='https://github.com/AryanPadmanabhan'
-              target='_blank'
-              rel='noreferrer'
-            >
-                    <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                        <FaGithub />
-                    </div>
-                    </a>
-                    <Link href='/#contact'>
-                    <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                        <AiOutlineMail />
-                    </div>
-                    </Link>
-                    <Link href='/resume'>
-                    <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                        <BsFillPersonLinesFill />
-                    </div>
-                    </Link>
-                    
-                </div> */}
+                
                 <div className=" p-10 shadow-md rounded-xl sm:px-12 bg-gray-900 text-gray-100 flex flex-col w-full h-full mx-auto hover:scale-110 ease-in duration-300">
-	<img src="https://media.licdn.com/dms/image/D5603AQEspyE9i3OeoA/profile-displayphoto-shrink_400_400/0/1690591654063?e=1696464000&v=beta&t=HmRj58rjnLXlVIGT7IzxPxt5VWENxaS15sP4tp_oL4Y" alt="" className="w-32 h-32 mx-auto rounded-full bg-gray-500 aspect-square" />
+	<img src="https://media.licdn.com/dms/image/D5603AQEVHdU8Zx3GFg/profile-displayphoto-shrink_400_400/0/1690948848858?e=1696464000&v=beta&t=XHhWFcH0HcRDJh1ym0ktiGUNbCcCHTpqkiaOylp98_A" alt="" className="w-32 h-32 mx-auto rounded-full bg-gray-500 aspect-square" />
 	<div className="space-y-4 text-center divide-y divide-gray-700">
 		<div className="">
 			<h2 className="my-2 space-y-1 text-xl font-semibold sm:text-xl">Aryan Padmanabhan</h2>
