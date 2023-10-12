@@ -16,7 +16,7 @@ export default function Home() {
       <Head>
         <title>Aryan | Software Engineer</title>
         <meta name="description" content="Generate by create next app" />
-        <link rel="icon" href="/favicon2.png"/>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon2.png"/>
       </Head>
       <Navbar />
       <Main/>
