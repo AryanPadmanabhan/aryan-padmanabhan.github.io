@@ -48,7 +48,7 @@ export const Projects = () => {
     },
     {
       title: 'Scriptify',
-      shortDescription: 'my first full-stack',
+      shortDescription: 'AI full-stack web app',
       fullDescription: `
         Web application to convert handwritten code from images into executable code. Using Next.js frontend integrated with Firebase database for storage. 
       `,
@@ -110,7 +110,7 @@ export const Projects = () => {
           >
             {/* Left: Project Image */}
             {project.image && (
-              <div className="flex-shrink-0">
+              <div className="flex-shrink-0 transform hover:scale-105 transition-transform duration-300 ease-in-out">
                 <Image
                   src={project.image}
                   alt={`${project.title} Project Image`}

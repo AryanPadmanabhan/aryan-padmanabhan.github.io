@@ -16,17 +16,27 @@ export const Experience = () => {
       company: 'United Health Group',
       logo: 'https://1000logos.net/wp-content/uploads/2018/02/unitedhealthcare-emblem.png', // Ensure transparent logo
       title: 'Software Engineer Intern',
-      period: 'Summer 2023 - Fall 2023',
+      period: 'Summer 2023',
       description: `
         Image Processing Team! Built models for document indexing. 
       `,
       skills: ['Python', 'MiniLang', 'Pandas', 'NumPy', 'PyTorch', 'LLM', 'Neural Network', 'Machine Learning'],
     },
     {
+      company: 'Uptrends.ai',
+      logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtSWq83pFzQReDmcP8_i7VZVFwWPnVgCC4Tw&s', // Ensure transparent logo
+      title: 'Algorithm Consulting',
+      period: 'Fall 2023',
+      description: `
+        NLP news sentiment with profitability in the equity markets. 
+      `,
+      skills: ['Python', 'AI/ML', 'Pandas'],
+    },
+    {
       company: 'FuzeMee',
       logo: 'https://framerusercontent.com/images/tJu1B0jnoi7nFGROxaF6i9c.png', // Ensure transparent logo
       title: 'UI/UX Data Analyst Intern',
-      period: 'Fall 2022 - Spring 2023',
+      period: 'Fall 2022',
       description: `
       Front-end user experience. 
       `,
@@ -36,7 +46,7 @@ export const Experience = () => {
       company: 'Trading Academy',
       logo: 'https://play-lh.googleusercontent.com/CL1GPQgLPLLBS5doPAUIXXnc96ZNzKEcXfhkG3ooh1zLve6C4YY05BMApGgy5HVlISw', // Ensure transparent logo
       title: 'Business Dev Trading Intern',
-      period: 'Summer 2022 - Fall 2022',
+      period: 'Summer 2022',
       description: `
         Backtested patented concepts.
       `,

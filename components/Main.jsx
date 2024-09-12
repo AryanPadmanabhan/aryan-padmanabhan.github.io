@@ -46,7 +46,7 @@ export const Main = () => {
             Hi, I'm <span className="text-gray-900">Aryan</span>
           </h1>
           <h2 className="text-2xl sm:text-3xl text-gray-700 mb-6">
-            I've worked with: <span>{getColoredText()}</span>
+            I've worked @: <span>{getColoredText()}</span>
           </h2>
           <p className="text-gray-600 text-lg mb-6">
             I'm currently a CS student at the University of Minnesota and I previously was a Software Engineer Intern at Adobe where I worked on the Commerce Engineering team.

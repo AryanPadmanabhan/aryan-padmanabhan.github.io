@@ -37,7 +37,7 @@ const Navbar = () => {
     >
       <div className="flex justify-between items-center w-full h-full px-4 md:px-10">
         {/* Logo */}
-        <h1 className="text-2xl font-bold text-gray-900 tracking-wide">Aryan</h1>
+        <h1 className="text-2xl font-bold text-gray-900 tracking-wide">aryan padmanabhan</h1>
 
         {/* Desktop Links */}
         <ul style={{ color: `${linkColor}` }} className="hidden md:flex space-x-8 text-gray-700 font-medium">
