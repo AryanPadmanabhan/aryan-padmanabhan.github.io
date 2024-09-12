@@ -1,125 +1,34 @@
-import React from 'react'
-import Image from 'next/image'
-import python from '../public/assets/Python.png'
-import java from '../public/assets/java.png'
-import pytorch from '../public/assets/pytorch.png'
-import html from '../public/assets/html.png'
-import css from '../public/assets/css.png'
-import js from '../public/assets/javascript.png'
-import react from '../public/assets/react.png'
-import pine from '../public/assets/pine.png'
-import c from '../public/assets/c.png'
-import ocaml from '../public/assets/ocaml.png'
+import React from 'react';
 
 const Skills = () => {
-    return (
-      <div id='skills' className='w-full bg-gray-900'>
-        <h3 className='flex 
-max-w-full px-10 justify-evenly mx-auto uppercase tracking-[15px] text-white text-4xl py-10'>Skills</h3>
-      <div className='grid grid-cols-2 lg:grid-cols-5 gap-8 '>
-            <div className='bg-gray-800 p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-              <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-                <div className='m-auto'>
-                  <Image src={python} width='64px' height='64px' alt='/' />
-                </div>
-                <div className='flex flex-col items-center justify-center text-white'>
-                  <h3>Python</h3>
-                </div>
-              </div>
-            </div>
-            <div className='bg-gray-800 p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-              <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-                <div className='m-auto'>
-                  <Image src={java} width='64px' height='64px' alt='/' />
-                </div>
-                <div className='flex flex-col items-center justify-center text-white'>
-                  <h3>Java</h3>
-                </div>
-              </div>
-            </div>
-            <div className='bg-gray-800 p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-              <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-                <div className='m-auto'>
-                  <Image src={c} width='64px' height='64px' alt='/' />
-                </div>
-                <div className='flex flex-col items-center justify-center text-white'>
-                  <h3>C</h3>
-                </div>
-              </div>
-            </div>
-            <div className='bg-gray-800 p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-              <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-                <div className='m-auto'>
-                  <Image src={html} width='64px' height='64px' alt='/' />
-                </div>
-                <div className='flex flex-col items-center justify-center text-white'>
-                  <h3>HTML</h3>
-                </div>
-              </div>
-            </div>
-            <div className='bg-gray-800 p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-              <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-                <div className='m-auto'>
-                  <Image src={css} width='64px' height='64px' alt='/' />
-                </div>
-                <div className='flex flex-col items-center justify-center text-white'>
-                  <h3>CSS</h3>
-                </div>
-              </div>
-            </div>
-            <div className='bg-gray-800 p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-              <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-                <div className='m-auto'>
-                  <Image src={js} width='64px' height='64px' alt='/' />
-                </div>
-                <div className='flex flex-col items-center justify-center text-white'>
-                  <h3>JavaScript</h3>
-                </div>
-              </div>
-            </div>
-            <div className='bg-gray-800 p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-              <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-                <div className='m-auto'>
-                  <Image src={react} width='64px' height='64px' alt='/' />
-                </div>
-                <div className='flex flex-col items-center justify-center text-white'>
-                  <h3>React</h3>
-                </div>
-              </div>
-            </div>
-            <div className='bg-gray-800 p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-              <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-                <div className='m-auto'>
-                  <Image src={ocaml} width='64px' height='64px' alt='/' />
-                </div>
-                <div className='flex flex-col items-center justify-center text-white'>
-                  <h3>OCaml</h3>
-                </div>
-              </div>
-            </div>
-            <div className='bg-gray-800 p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-              <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-                <div className='m-auto'>
-                  <Image src={pytorch} width='64px' height='64px' alt='/' />
-                </div>
-                <div className='flex flex-col items-center justify-center text-white'>
-                  <h3>PyTorch</h3>
-                </div>
-              </div>
-            </div>
-            <div className='bg-gray-800 p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-              <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-                <div className='m-auto'>
-                  <Image src={pine} width='64px' height='64px' alt='/' />
-                </div>
-                <div className='flex flex-col items-center justify-center text-white'>
-                  <h3>Pinecone</h3>
-                </div>
-              </div>
-            </div>
+  const skills = [
+    'Python',
+    'Java',
+    'C',
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'React',
+    'OCaml',
+    'PyTorch',
+    'Pinecone',
+  ];
+
+  return (
+    <div id="skills" className="w-full bg-gray-900 py-16">
+      <h3 className="text-center text-white text-4xl mb-10 tracking-widest uppercase">Skills</h3>
+      <div className="max-w-4xl mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 text-center">
+        {skills.map((skill, index) => (
+          <div
+            key={index}
+            className="text-white text-lg font-medium hover:text-gray-400 transition-colors duration-300 ease-in-out"
+          >
+            {skill}
           </div>
-          </div>
-    );
-  };
-  
-  export default Skills;
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Skills;

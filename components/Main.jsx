@@ -1,81 +1,92 @@
-import React from 'react'
-import {FaLinkedinIn, FaGithub} from 'react-icons/fa'
-import {BsFillPersonLinesFill} from 'react-icons/bs'
-import {AiOutlineMenu, AiOutlineClose, AiOutlineMail} from 'react-icons/ai'
-import Link from 'next/link';
-import Image from 'next/image'
-import { Cursor, useTypewriter} from "react-simple-typewriter"
-
+import React, { useState, useEffect } from 'react';
+import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 
 export const Main = () => {
-    const [text] = useTypewriter({
-        words: ['AI/ML', 'Web Dev', 'Cloud', 'Building Tech'],
-        loop: true,
-        delaySpeed: 2000,
-    });
+  const words = ['Adobe', 'UnitedHealth Group', 'Startups', 'Trading Academy'];
+  const colors = ['#FF0000', '#0071C5', '#FF4500', '#32CD32']; // Corresponding colors for the words
+  
+  const [currentWordIndex, setCurrentWordIndex] = useState(0);
+  const [displayedText, setDisplayedText] = useState('');
+  const [letterIndex, setLetterIndex] = useState(0);
+
+  useEffect(() => {
+    // Type out the letters one by one
+    if (letterIndex < words[currentWordIndex].length) {
+      const timeout = setTimeout(() => {
+        setDisplayedText((prev) => prev + words[currentWordIndex][letterIndex]);
+        setLetterIndex(letterIndex + 1);
+      }, 100);
+      return () => clearTimeout(timeout);
+    } else {
+      // Wait a bit after finishing the word, then move to the next word
+      const timeout = setTimeout(() => {
+        setDisplayedText('');
+        setLetterIndex(0);
+        setCurrentWordIndex((prev) => (prev + 1) % words.length);
+      }, 2000);
+      return () => clearTimeout(timeout);
+    }
+  }, [letterIndex, currentWordIndex]);
+
+  // Split the displayed text into individual letters with color
+  const getColoredText = () => {
+    return displayedText.split('').map((letter, index) => (
+      <span key={index} style={{ color: colors[currentWordIndex] }}>
+        {letter}
+      </span>
+    ));
+  };
+
   return (
-    <div id='home' className='w-full h-screen text-center bg-gray-900'>
-        
-        <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
-            
-            <div>
-                
+    <div id="home" className="w-full h-screen bg-white flex justify-center items-center text-center">
+      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8">
+        {/* Left Section - Description and Social Links */}
+        <div className="flex flex-col justify-center items-start text-left">
+          <h1 className="text-4xl sm:text-5xl font-semibold text-gray-900 mb-4">
+            Hi, I'm <span className="text-gray-900">Aryan</span>
+          </h1>
+          <h2 className="text-2xl sm:text-3xl text-gray-700 mb-6">
+            I've worked with: <span>{getColoredText()}</span>
+          </h2>
+          <p className="text-gray-600 text-lg mb-6">
+            I'm currently a CS student at the University of Minnesota and I previously was a Software Engineer Intern at Adobe where I worked on the Commerce Engineering team.
+          </p>
+          <p className="text-gray-600 text-lg mb-6">
+            I've built full-stack web apps, completed projects in AI/ML & FinTech, and open source projects!
+          </p>
 
-                <h1 className='pt-6 pb-2 text-white'>
-                    Hi, I'm <span className='text-white'>Aryan</span>
-                </h1>
-                <h1 className='py-2 text-white'>
-                    My Focus: <span className='text-[#8CA4CD]'> {text}</span>
-                </h1>
-                <p className='py-4 text-black max-w-[70%] m-auto'>
-
-                </p>
-                
-                <div className=" p-10 shadow-md rounded-xl sm:px-12 bg-gray-800 text-gray-100 flex flex-col w-full h-full mx-auto hover:scale-105 ease-in duration-300">
-	<img src="https://media.licdn.com/dms/image/D5603AQEVHdU8Zx3GFg/profile-displayphoto-shrink_400_400/0/1690948850012?e=1710979200&v=beta&t=Ht3PCFN_nWvhokkolOD-aPv_a95QSgiMGUhhWfbQq7s" alt="" className="w-32 h-32 mx-auto rounded-full bg-gray-500 aspect-square" />
-	<div className="space-y-4 text-center divide-y divide-gray-700">
-		<div className="">
-			<h2 className="my-2 space-y-1 text-xl font-semibold sm:text-xl">Aryan Padmanabhan</h2>
-			<p className="px-5 text-sm sm:text-base text-white ">I am a student at the University of Minnesota studying Computer Science.</p>
-            <p className="-my-1 px-5 text-sm sm:text-base text-white ">Specifically, I am interested in back-end development.</p>    
-        </div>
-		<div className='flex justify-center max-w-[330px] m-auto py-4'>
-                    
-                <a
-              href='https://www.linkedin.com/in/aryan-padmanabhan/'
-              target='_blank'
-              rel='noreferrer'
+          {/* Social Links */}
+          <div className="flex space-x-6">
+            <a
+              href="https://www.linkedin.com/in/aryan-padmanabhan/"
+              target="_blank"
+              rel="noreferrer"
+              className="text-gray-900 text-2xl hover:text-blue-500 transition-colors duration-300"
             >
-                    <div className='mx-6 rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300' href="www.linkedin.com">
-                        <FaLinkedinIn />
-                    </div>
-                    </a>
-                    <a
-              href='https://github.com/AryanPadmanabhan'
-              target='_blank'
-              rel='noreferrer'
+              <FaLinkedinIn />
+            </a>
+            <a
+              href="https://github.com/AryanPadmanabhan"
+              target="_blank"
+              rel="noreferrer"
+              className="text-gray-900 text-2xl hover:text-blue-500 transition-colors duration-300"
             >
-                    <div className='mx-6 rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                        <FaGithub />
-                    </div>
-                    </a>
-                    
-                    
-                </div>
-	</div>
-</div>
-            </div>
-            
-
-            
-            
-            
+              <FaGithub />
+            </a>
+          </div>
         </div>
-        
+
+        {/* Right Section - Profile Image */}
+        <div className="flex justify-center">
+          <img
+            src="https://media.licdn.com/dms/image/v2/D5603AQHJd0SbNhOXpw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1719715110764?e=1731542400&v=beta&t=z3eKQ26rSCrgbA8QhD8tqcaiIYy9ydOOnwIsvsnp7Io"
+            alt="Aryan's Profile Picture"
+            className="w-72 h-72 rounded-full object-cover"
+          />
+        </div>
+      </div>
     </div>
-    
-    
-  )
-}
+  );
+};
 
-export default Main
+export default Main;

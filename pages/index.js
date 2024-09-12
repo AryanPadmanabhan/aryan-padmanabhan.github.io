@@ -20,8 +20,6 @@ export default function Home() {
       </Head>
       <Navbar />
       <Main/>
-      <Skills/>
-      <Education/>
       <Experience/>
       <Projects />
     </div>
