@@ -10,9 +10,18 @@ import drone from '../public/assets/drone.png';
 import pydoc from '../public/assets/pydoc.png';
 import scriptify from '../public/assets/scriptify.png';
 import luup from '../public/assets/luup.png';
+import fund from '../public/assets/fund.jpeg';
 
 export const Projects = () => {
   const projects = [
+    {
+      title: 'Rosetta',
+      shortDescription: 'product built for a ~60M AUM hedge fund',
+      fullDescription: `
+        Built a tool for a hedge fund to provide investors with monthly AI-generated portfolio commentary
+      `,
+      image: fund,
+    },
     {
       title: 'Luup',
       shortDescription: 'professional networking SaaS platform',
@@ -23,7 +32,7 @@ export const Projects = () => {
     },
     {
       title: 'Signol',
-      shortDescription: 'financial data provider (~1.2k users)',
+      shortDescription: 'financial data provider (~1.2k users, aided in $3.4M profit)',
       fullDescription: `
         Signol is a system designed to provide financial data. It consists of algorithms for locating prime opportunities, data on liquidity, relative volume, and other derivative data.
       `,
@@ -73,19 +82,19 @@ export const Projects = () => {
       image: bb,
     },
     {
-      title: 'LLM Powered Q&A',
+      title: 'LLM Powered Readthedocs',
       shortDescription: 'retrieval augmented generation',
       fullDescription: `
-        Trained a Transformer-based Q&A Large Learning Model (LLM) with datasets for information extraction.
+        Trained a Transformer-based Q&A Large Learning Model (LLM) with coding language documentation to learn languages quicker.
       `,
       image: ml,
     },
     {
-      title: 'SYS Trading Strategy',
+      title: 'Systematic Trading Strategy',
       shortDescription: 'successful strategy but edge-eroded',
       fullDescription: `
-        Sourced & sorted OHLC data in Python and calculated risk-adjusted returns. Conducted A/B testing on various technical strategies 
-        to improve success rates and curated a strategy with a 69% success rate across various market ETFs.
+        Sourced & sorted OHLC data in Python and calculated risk-adjusted returns. Conducted testing on various technical strategies 
+        to improve success rates and curated a strategy with a 70% success rate across various market ETFs.
       `,
       image: sys,
     },
