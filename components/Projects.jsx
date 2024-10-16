@@ -11,6 +11,8 @@ import pydoc from '../public/assets/pydoc.png';
 import scriptify from '../public/assets/scriptify.png';
 import luup from '../public/assets/luup.png';
 import fund from '../public/assets/fund.jpeg';
+import microtar from '../public/assets/microtar.webp';
+import bash from '../public/assets/bash.jpg';
 
 export const Projects = () => {
   const projects = [
@@ -23,7 +25,7 @@ export const Projects = () => {
       image: fund,
     },
     {
-      title: 'Luup',
+      title: 'Luup (Google AI Hackathon)',
       shortDescription: 'professional networking SaaS platform',
       fullDescription: `
         LinkedIn Premium is too expensive for students so we made an alternative that can find anyone's email address, track networking, provide professionals to connect with, etc.
@@ -54,6 +56,22 @@ export const Projects = () => {
         Developed an open-source Python module for document analysis and computer vision processes. 
       `,
       image: pydoc,
+    },
+    {
+      title: 'BashLite',
+      shortDescription: 'a lighter, simplified version of bash',
+      fullDescription: `
+        Developed a command-line shell with concurrency, process management, I/O redirection, and signal handling. 
+      `,
+      image: bash,
+    },
+    {
+      title: 'MicroTar',
+      shortDescription: 'replicated unix TAR',
+      fullDescription: `
+        Replicated Unix tar in a compact, portable utility, enabling file archiving and extraction. 
+      `,
+      image: microtar,
     },
     {
       title: 'Scriptify',
