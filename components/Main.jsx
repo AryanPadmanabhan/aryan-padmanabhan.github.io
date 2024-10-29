@@ -45,11 +45,11 @@ export const Main = () => {
           <h1 className="text-4xl sm:text-5xl font-semibold text-gray-900 mb-4">
             Hi, I'm <span className="text-gray-900">Aryan</span>
           </h1>
-          <h2 className="text-2xl sm:text-3xl text-gray-700 mb-6">
+          <h2 className="text-2xl sm:text-3xl text-gray-700 mt-4 sm:mt-0 mb-6">
             I've worked @: <span>{getColoredText()}</span>
           </h2>
           <p className="text-gray-600 text-lg mb-6">
-            I'm currently a CS student at the University of Minnesota and I previously was a Software Engineer Intern at Adobe where I worked on the Commerce Engineering team.
+          I’m currently pursuing a Computer Science degree at the University of Minnesota and previously interned as a Software Engineer at Adobe, where I contributed to the Commerce Engineering team.
           </p>
           <p className="text-gray-600 text-lg mb-6">
             I've built full-stack web apps, completed projects in AI/ML & FinTech, and open source projects!

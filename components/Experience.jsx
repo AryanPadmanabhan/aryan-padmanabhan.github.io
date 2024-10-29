@@ -10,12 +10,12 @@ export const Experience = () => {
       description: `
         Commerce Engineering Team! Worked on pipelines for data integrity.
       `,
-      skills: ['Apache Spark', 'Kafka', 'Databricks', 'Azure ADLS', 'AWS S3'],
+      skills: ['Spark', 'Kafka', 'Databricks', 'Azure', 'AWS'],
     },
     {
       company: 'United Health Group',
       logo: 'https://1000logos.net/wp-content/uploads/2018/02/unitedhealthcare-emblem.png', // Ensure transparent logo
-      title: 'Software Engineer Intern',
+      title: 'AI Software Engineer Intern',
       period: 'Summer 2023',
       description: `
         Image Processing Team! Built models for document indexing. 
@@ -25,7 +25,7 @@ export const Experience = () => {
     {
       company: 'Uptrends.ai',
       logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtSWq83pFzQReDmcP8_i7VZVFwWPnVgCC4Tw&s', // Ensure transparent logo
-      title: 'Algorithm Consulting',
+      title: 'Software Engineer Intern',
       period: 'Fall 2023',
       description: `
         NLP news sentiment with profitability in the equity markets. 

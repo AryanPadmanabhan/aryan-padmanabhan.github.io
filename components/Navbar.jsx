@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { useRouter } from 'next/router';
+import { motion } from 'framer-motion';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -58,42 +59,51 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
-      <div className={nav ? 'fixed left-0 top-0 w-full h-screen bg-black/70' : ''}>
-        <div
-          className={
-            nav
-              ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-white p-10 ease-in duration-500'
-              : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
-          }
+      {/* Mobile Menu with Animation */}
+      {nav && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className="fixed left-0 top-0 w-full h-screen bg-black/70"
+          onClick={handleNav}
         >
-          <div className="flex w-full items-center justify-between">
-            <h1 className="text-xl font-bold text-gray-900">Aryan</h1>
-            <div onClick={handleNav} className="rounded-full shadow-lg p-2 cursor-pointer">
-              <AiOutlineClose className="text-gray-900" />
+          <motion.div
+            initial={{ x: '100%' }}
+            animate={{ x: 0 }}
+            exit={{ x: '100%' }}
+            transition={{ type: 'spring', stiffness: 260, damping: 20 }}
+            className="fixed right-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-white p-10 shadow-lg"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex w-full items-center justify-between">
+              <h1 className="text-xl font-bold text-gray-900">Aryan</h1>
+              <div onClick={handleNav} className="rounded-full shadow-lg p-2 cursor-pointer">
+                <AiOutlineClose className="text-gray-900" />
+              </div>
             </div>
-          </div>
-          <div className="mt-6">
-            <ul className="text-gray-900 space-y-6 text-base">
-              <Link href="/#home">
-                <li onClick={() => setNav(false)} className="hover:text-blue-500 transition-colors duration-300 cursor-pointer">
-                  Home
-                </li>
-              </Link>
-              <Link href="/#experience">
-                <li onClick={() => setNav(false)} className="hover:text-blue-500 transition-colors duration-300 cursor-pointer">
-                  Experience
-                </li>
-              </Link>
-              <Link href="/#projects">
-                <li onClick={() => setNav(false)} className="hover:text-blue-500 transition-colors duration-300 cursor-pointer">
-                  Projects
-                </li>
-              </Link>
-            </ul>
-          </div>
-        </div>
-      </div>
+            <div className="mt-6">
+              <ul className="text-gray-900 space-y-6 text-base">
+                <Link href="/#home">
+                  <li onClick={() => setNav(false)} className="hover:text-blue-500 transition-colors duration-300 cursor-pointer">
+                    Home
+                  </li>
+                </Link>
+                <Link href="/#experience">
+                  <li onClick={() => setNav(false)} className="hover:text-blue-500 transition-colors duration-300 cursor-pointer">
+                    Experience
+                  </li>
+                </Link>
+                <Link href="/#projects">
+                  <li onClick={() => setNav(false)} className="hover:text-blue-500 transition-colors duration-300 cursor-pointer">
+                    Projects
+                  </li>
+                </Link>
+              </ul>
+            </div>
+          </motion.div>
+        </motion.div>
+      )}
     </div>
   );
 };
