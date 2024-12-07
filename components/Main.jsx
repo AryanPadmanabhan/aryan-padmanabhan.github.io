@@ -79,7 +79,7 @@ export const Main = () => {
         {/* Right Section - Profile Image */}
         <div className="flex justify-center">
           <img
-            src="https://media.licdn.com/dms/image/v2/D5603AQHJd0SbNhOXpw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1719715110764?e=1731542400&v=beta&t=z3eKQ26rSCrgbA8QhD8tqcaiIYy9ydOOnwIsvsnp7Io"
+            src="/assets/Aryan_Headshot_Adobe.jpg"
             alt="Aryan's Profile Picture"
             className="w-72 h-72 rounded-full object-cover"
           />
