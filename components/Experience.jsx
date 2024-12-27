@@ -3,12 +3,42 @@ import React from 'react';
 export const Experience = () => {
   const experiences = [
     {
+      company: 'Saronic',
+      logo: 'https://www.appengine.ai/uploads/images/profile/logo/Saronic-AI.png', // Replace with transparent background logo URL
+      title: 'Software Engineer Intern',
+      period: 'Incoming Summer 2025',
+      description: `
+        Autonomous Surface Vessels (ASVs) for naval and maritime applications
+      `,
+      skills: [],
+    },
+    {
+      company: '8VC',
+      logo: 'https://img.cryptorank.io/funds/8_vc1669471160432.png', // Replace with transparent background logo URL
+      title: 'Engineering Fellow',
+      period: 'Incoming Summer 2025',
+      description: `
+        https://www.8vc.com/fellowships
+      `,
+      skills: [],
+    },
+    {
+      company: 'Adobe',
+      logo: 'https://static.cdnlogo.com/logos/a/90/adobe.png', // Replace with transparent background logo URL
+      title: 'Software Engineer Intern',
+      period: 'Incoming Summer 2025',
+      description: `
+        Commerce Engineering 
+      `,
+      skills: [],
+    },
+    {
       company: 'Adobe',
       logo: 'https://static.cdnlogo.com/logos/a/90/adobe.png', // Replace with transparent background logo URL
       title: 'Software Engineer Intern',
       period: 'Summer 2024',
       description: `
-        Commerce Engineering Team! Worked on pipelines for data integrity.
+        Data Platform! Built the Commerce Data Platform for data integrity, data sharing, and operational insights.
       `,
       skills: ['Spark', 'Kafka', 'Databricks', 'Azure', 'AWS'],
     },
